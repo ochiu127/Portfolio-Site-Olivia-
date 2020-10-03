@@ -4,13 +4,27 @@
 
 /*general*/
 
-/*headings*/
+/*heading sizes*/
 
 /*img width*/
 
 /*links*/
 
 /*buttons*/
+
+/*layout*/
+  /*
+  container
+  row
+  hero
+  logo
+  header
+  main
+  nav
+  skills
+  process
+  footer
+  */
 
 /*
 Colors used:
@@ -21,14 +35,21 @@ Accent Color 1 (Light Rose): #dabebd;
 Accent Color 2 (Gray): #d9d9d9;
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-color:#ffffff;
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 18px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #4a4a4a;
-}
+    width: 100%;
+
+  }
+
 
 h1, h2, h3, h4 {
     line-height: 1.4;
@@ -39,7 +60,7 @@ h1, h2, h3, h4 {
   }
   
   h2 {
-    font-size: 1.75em;
+    font-size: 1.25em;
     font-weight: 700;
   }
   
@@ -54,6 +75,11 @@ h1, h2, h3, h4 {
 
   img {
     width: 100%;
+    max-width: 607px;
+  }
+
+  #profile img {
+    max-width: 288px;
   }
 
   a {
@@ -61,35 +87,37 @@ h1, h2, h3, h4 {
     text-decoration: none; /* No underlining */
   }
   a:hover {
-    color: #000000;
-    text-decoration: underline; /* Underlining when hovering over a link */
+    color: #a4a4a4;
+    text-decoration: none; /* Underlining when hovering over a link */
   }
   a:visited { /* visited link */
-    color: #585858;
+    color: #824a48;
   }
   a:active { /* selected link */
-    color: #824a48;
+    color: #ffffff;
   }
   a:hover,
 a:focus {
   color: #585858;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #dabebd;
+    background-color: #824a48;
     color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 40px;
-    border-bottom: 2px solid #824a48; /* width of the border, type, color */
+    font-weight: 700;
+    margin: 0 1em;
+    padding: 8px 2em;
+    border-radius: 25px;
     transition: 0.2s opacity;
+    box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.5) ;
   }
 
   .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
+    color: #ffffff;
   }
 
   .button:active {
@@ -97,14 +125,158 @@ a:focus {
     text-decoration: none;
   }
 
+  .button:visited {
+    color: #ffffff;
+  }
+
+
   .button.contact {
-    background-color:transparent;
-    color: #824a48;
+    background-color: #424242;
+    color: #ffffff;
     text-transform: uppercase;
-    border: 2px solid #824a48;
+    margin: 1em 1em;
+    box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.5) ;
   }
 
   .button.contact:hover {
     background-color: #824a48;
     color: #ffffff;
   }
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.row {
+  padding: 3em 2em;
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-top: 1px solid #4a4a4a; }
+
+#hero {
+  background-color: #f2f2f2;
+  padding: 20px 25px;
+  display: inline-block;
+  width: 100%
+}
+
+#hero h1{
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero h2{
+  margin-top: 0;
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  }
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.5);
+  width: 100%;
+}
+
+main {
+  padding-top: 150px;
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #824a48;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.8;
+  color: #a4a4a4;
+}
+
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #824a48;
+}
+
+#skills {
+  text-align: left;
+  margin-bottom: 3em;
+}
+
+#process {
+  padding: 1em;
+}
+
+#process h2 {
+  color: #824a48;
+}
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact ul li {
+  display: inline-block;
+}
+
+#social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#social ul li {
+  display: inline-block;
+}
+
+#social a {
+  margin: 0 1em;
+}
+

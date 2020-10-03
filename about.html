@@ -10,10 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
 </head>
 
-<header>
-  <div id="nav">
+<body>
+
+<header id="header">
+  <div>
     <div>
-      <a href="index.html">Olivia Chiu</a>
+      <a href="index.html" class="logo">Olivia Chiu</a>
     </div>
     <nav>
       <ul>
@@ -23,38 +25,41 @@
       </ul>
     </nav>
   </div>
-  <div>
-    <h1> About </h1>
-  </div>
 </header>
+
 <main>
-  <div>
-    <picture>
-      <source srcset="img/profile.png" media="(max-width:676px)">
-      <img src="img/profile.png" alt="profile"> 
-    </picture>
-  </div>
-  <div id="my-story">
-    <h2>My Story</h2>
-    <p>
-      My experience in hospitality management has aught me the joy in effectively anticipating and delivering to the needs of others. Combined with my penchant for creative arts, I decided pursue a career where I can utilize my strategic mindset into
-      designing useful tools for people. With the skills I have learned from Career Foundry’s Immersive UX Design Course, I am confident that I will be able to contribute my expertise to a UX Design role at any company.
-    </p>
+  <div class="container">
     <div>
-      <a href="files/resume2020.pdf" target="_blank" class="button">Download My Resume</a>
+      <h1> About </h1>
+    </div>
+    <div>
+      <picture id="profile">
+        <source srcset="img/profile.png" media="(max-width:288px)">
+        <img src="img/profile.png" alt="profile"> 
+      </picture>
+    </div>
+    <div>
+      <h2>My Story</h2>
+      <p>
+        My experience in hospitality management has aught me the joy in effectively anticipating and delivering to the needs of others. Combined with my penchant for creative arts, I decided pursue a career where I can utilize my strategic mindset into
+        designing useful tools for people. With the skills I have learned from Career Foundry’s Immersive UX Design Course, I am confident that I will be able to contribute my expertise to a UX Design role at any company.
+      </p>
       <div>
-        <h2 id="my-skills">Skills & Tools</h2>
+        <a href="files/resume2020.pdf" target="_blank" class="button">Download My Resume</a>
+      </div>
         <div>
+          <h1>Skills & Tools</h1>
+          <div id="skills">
           <div>
-            <h3>Relevant Skills</h3>
-            <ul>
-              <li>User Persona</li>
-              <li>User Research</li>
-              <li>Usability Testing</li>
-              <li>Wireframing</li>
-              <li>Prototyping</li>
-              <li>Basic HTML</li>
-            </ul>
+              <h3>Relevant Skills</h3>
+              <ul>
+                <li>User Persona</li>
+                <li>User Research</li>
+                <li>Usability Testing</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>Basic HTML</li>
+              </ul>
           </div>
           <div>
             <h3>Tools I Use</h3>
@@ -64,10 +69,60 @@
               <li>Photoshop</li>
             </ul>
           </div>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </main>
 
+<footer>
+  <div class="container">
+    <h1> Get In Touch </h1>
+    <p> Feel free to reach out to me about my work or future opportunities! </p>
+    <div id="contact">
+      <ul>
+        <li><a href="mailto:ochiu127@gmail.com" class="button contact"> Email </a></li>
+        <li><a href="skype:live:ochiu127_1" class="button contact"> Skype </a></li>
+      </ul>
+    </div>
+      <div id="social">
+        <!--Social Media Layout and Placeholders-->
+        <a href="https://www.linkedin.com/in/olivia-chiu-34694298/" target="_blank">
+          <svg height="50" version="1.1" viewBox="0 0 512 512" width="50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
+            <defs id="defs12" />
+            <g id="g5891">
+              <rect height="512" id="rect2987" rx="64" ry="64" style="fill:#0083be;fill-opacity:1;fill-rule:nonzero;stroke:none" width="512" x="0" y="5.6843419e-014" />
+              <g id="g9-1" transform="matrix(1.5537946,0,0,1.5537946,-140.87332,-132.64552)">
+                <rect height="166.021" id="rect11" style="fill:#ffffff" width="55.194" x="129.957" y="200.35699" />
+                <path d="m 157.927,120.303 c -18.884,0 -31.222,12.415 -31.222,28.687 0,15.93 11.963,28.687 30.491,28.687 h 0.357 c 19.245,0 31.224,-12.757 31.224,-28.687 -0.357,-16.272 -11.978,-28.687 -30.85,-28.687 z" id="path13-0"
+                  style="fill:#ffffff" />
+                <path
+                  d="m 320.604,196.453 c -29.277,0 -42.391,16.101 -49.734,27.41 v -23.506 h -55.18 c 0.732,15.573 0,166.021 0,166.021 h 55.179 V 273.66 c 0,-4.963 0.357,-9.924 1.82,-13.471 3.982,-9.911 13.068,-20.178 28.313,-20.178 19.959,0 27.955,15.23 27.955,37.539 v 88.828 h 55.182 v -95.206 c 0,-50.996 -27.227,-74.719 -63.535,-74.719 z"
+                  id="path15" style="fill:#ffffff" />
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a href="https://www.behance.net/gallery/102696903/Online-Portfolio-Ink-Tank" target="_blank">
+          <svg height="50px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="_x31_01-behance">
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M236.365,137.57c9.004,12.412,13.514,27.215,13.514,44.538c0,17.787-4.51,32.147-13.631,42.967      c-5.129,6.012-12.615,11.575-22.52,16.571c15.033,5.442,26.363,14.021,34.092,25.742c7.633,11.726,11.48,25.995,11.48,42.744      c0,17.28-4.385,32.808-13.148,46.499c-5.551,9.061-12.529,16.749-20.883,22.938c-9.393,7.122-20.488,11.992-33.314,14.653      c-12.824,2.636-26.695,3.92-41.666,3.92H17.417V106.469H159.92C195.893,107.008,221.332,117.357,236.365,137.57L236.365,137.57z       M76.203,157.13v64.361h71.7c12.768,0,23.175-2.425,31.201-7.235c7.96-4.815,11.99-13.372,11.99-25.602      c0-13.641-5.279-22.58-15.839-26.981c-9.127-3.015-20.76-4.543-34.871-4.543H76.203z M76.203,269.758v77.786h71.612      c12.795,0,22.785-1.703,29.887-5.145c12.941-6.404,19.382-18.481,19.382-36.426c0-15.22-6.234-25.631-18.755-31.312      c-7.039-3.143-16.883-4.813-29.525-4.904H76.203z M437.566,186.86c15.238,6.727,27.77,17.372,37.641,31.906      c9.006,12.829,14.795,27.695,17.418,44.593c1.549,9.867,2.143,24.192,1.91,42.82H335.656      c0.955,21.623,8.471,36.815,22.842,45.488c8.715,5.413,19.146,8.137,31.467,8.137c12.943,0,23.504-3.292,31.617-9.873      c4.473-3.585,8.377-8.52,11.752-14.83h58.217c-1.549,12.768-8.617,25.781-21.115,39c-19.537,20.93-46.889,31.431-82.051,31.431      c-29.053,0-54.641-8.823-76.801-26.532c-22.25-17.672-33.313-46.472-33.313-86.339c0-37.379,10.021-66.061,30.033-86.006      c20.072-19.885,46.018-29.907,77.963-29.907C405.299,176.719,422.389,180.096,437.566,186.86L437.566,186.86z M352.297,235.572      c-8.053,8.228-13.125,19.355-15.211,33.374h98.277c-1.051-14.98-6.145-26.314-15.182-34.114      c-9.16-7.754-20.406-11.608-33.859-11.608C371.744,223.253,360.35,227.383,352.297,235.572L352.297,235.572z M322.352,156.379      h126.371v-36.302H322.352V156.379z M322.352,156.379"
+                      style="fill:#1B80E4;" />
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g id="Layer_1" />
+          </svg>
+        </a>
+      </div>
+      <p>Copyright OLIVIA CHIU 2020</p>
+  </div>
+</footer>
+</body>
 </html>
