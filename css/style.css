@@ -26,6 +26,8 @@
   footer
   */
 
+/*media queries*/
+  
 /*
 Colors used:
 Background Color (White): #ffffff;
@@ -57,6 +59,7 @@ h1, h2, h3, h4 {
   h1 {
     font-size: 2.00em;
     font-weight: 700;
+    margin: 30px 0;
   }
   
   h2 {
@@ -107,8 +110,9 @@ a:focus {
     background-color: #824a48;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 700;
+    text-align: center;
     margin: 0 1em;
-    padding: 8px 2em;
+    padding: .4em 2em;
     border-radius: 25px;
     transition: 0.2s opacity;
     box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.5) ;
@@ -143,11 +147,14 @@ a:focus {
     color: #ffffff;
   }
 
+  #resumebutton {
+    margin-top: 2em;
+  }
+
 /* Layout styling */
 
 .container {
   padding: 0 15px;
-  text-align: center;
 }
 
 .row {
@@ -155,18 +162,23 @@ a:focus {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row { padding-bottom: 25px; border-top: 1px solid #4a4a4a; }
 
 #hero {
   background-color: #f2f2f2;
-  padding: 20px 25px;
-  display: inline-block;
+  padding: 50px 25px;
   width: 100%
 }
 
 #hero h1{
   margin: 0;
-  padding: 0.67em 0;
+  padding: 0 0 .67em 0;
 }
 
 #hero h2{
@@ -237,6 +249,11 @@ nav > ul > li > a:active {
   color: #824a48;
 }
 
+#about-page .row {
+  padding: 0 2em;
+  margin: 0;
+}
+
 #skills {
   text-align: left;
   margin-bottom: 3em;
@@ -252,9 +269,8 @@ nav > ul > li > a:active {
 
 footer {
   background-color: #f2f2f2;
-  text-align: center;
+  text-align: center;  
   padding: 10px 0;
-  position: relative;
   width: 100%;
 }
 
@@ -280,3 +296,66 @@ footer {
   margin: 0 1em;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: .5em; 
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 110px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 110px;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

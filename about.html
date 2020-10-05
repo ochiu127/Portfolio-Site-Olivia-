@@ -10,13 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
 </head>
 
-<body>
+<body id="about-page">
 
 <header id="header">
-  <div>
-    <div>
+  <div class="container">
       <a href="index.html" class="logo">Olivia Chiu</a>
-    </div>
     <nav>
       <ul>
         <li><a href="index.html">Work</a></li>
@@ -32,25 +30,29 @@
     <div>
       <h1> About </h1>
     </div>
-    <div>
+    <div class="row">
+      <div class="col-md-6"
       <picture id="profile">
         <source srcset="img/profile.png" media="(max-width:288px)">
         <img src="img/profile.png" alt="profile"> 
       </picture>
+      <a id="resumebutton" href="files/resume2020.pdf" target="_blank" class="button">Download My Resume</a>
     </div>
-    <div>
+
+      <div class="col-md-6"
       <h2>My Story</h2>
       <p>
         My experience in hospitality management has aught me the joy in effectively anticipating and delivering to the needs of others. Combined with my penchant for creative arts, I decided pursue a career where I can utilize my strategic mindset into
         designing useful tools for people. With the skills I have learned from Career Foundry’s Immersive UX Design Course, I am confident that I will be able to contribute my expertise to a UX Design role at any company.
       </p>
-      <div>
-        <a href="files/resume2020.pdf" target="_blank" class="button">Download My Resume</a>
+        
       </div>
-        <div>
+    </div>
+
+  <div>
           <h1>Skills & Tools</h1>
-          <div id="skills">
-          <div>
+        <div class ="row">
+          <div class ="col-md-6" id= "skills">
               <h3>Relevant Skills</h3>
               <ul>
                 <li>User Persona</li>
@@ -61,7 +63,8 @@
                 <li>Basic HTML</li>
               </ul>
           </div>
-          <div>
+
+          <div class="col-md-6">
             <h3>Tools I Use</h3>
             <ul>
               <li>Balsamiq</li>
@@ -69,9 +72,8 @@
               <li>Photoshop</li>
             </ul>
           </div>
-          </div>
         </div>
-    </div>
+  </div>
   </div>
 </main>
 
