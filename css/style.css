@@ -1,19 +1,20 @@
-/*Online Portfolio Project*/
+/* Online Portfolio Project */
 
-/*color guide*/
+/* color guide */
 
-/*general*/
+/* general */
 
-/*heading sizes*/
+/* heading sizes */
 
-/*img width*/
+/* img width */
 
-/*links*/
+/* links */
 
-/*buttons*/
+/* buttons */
 
-/*layout*/
-  /*
+/* layout */
+
+/*
   container
   row
   hero
@@ -26,7 +27,7 @@
   footer
   */
 
-/*media queries*/
+/* media queries */
 
 /*
 Colors used:
@@ -42,114 +43,126 @@ Accent Color 2 (Gray): #d9d9d9;
 }
 
 body {
-    background-color:#ffffff;
-    font-family: 'palanquin', sans-serif;
-    font-size: 18px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #4a4a4a;
-    width: 100%;
+  background-color: #fff;
+  font-family: 'palanquin', sans-serif;
+  font-size: 18px;
 
-  }
+  /* Sets the font size to 16px */
+  font-weight: 300;
 
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
 
-h1, h2, h3, h4 {
-    line-height: 1.4;
-  }
-  h1 {
-    font-size: 2.00em;
-    font-weight: 700;
-    margin: 30px 0;
-  }
-  
-  h2 {
-    font-size: 1.25em;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 1.25em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1.00em;
-    font-weight: 400;
-  }
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+  width: 100%;
+}
 
-  img {
-    width: 100%;
-    max-width: 607px;
-  }
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
 
-  #profile img {
-    max-width: 288px;
-  }
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 30px 0;
+}
 
-  a {
-    color: #000000;
-    text-decoration: none; /* No underlining */
-  }
-  a:hover {
-    color: #a4a4a4;
-    text-decoration: none; /* Underlining when hovering over a link */
-  }
-  a:visited { /* visited link */
-    color: #824a48;
-  }
-  a:active { /* selected link */
-    color: #ffffff;
-  }
-  a:hover,
+h2 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  max-width: 607px;
+}
+
+#profile img {
+  max-width: 288px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a4a4a4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #824a48;
+}
+
+a:active {
+  color: #fff;
+}
+
+a:hover,
 a:focus {
   color: #585858;
   text-decoration: none;
 }
 
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #824a48;
-    color: #ffffff; /* needed to override the default link color */
-    font-weight: 700;
-    text-align: center;
-    margin: 0 1em;
-    padding: .4em 2em;
-    border-radius: 25px;
-    transition: 0.2s opacity;
-    box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.5) ;
-  }
+  display: inline-block;
+  background-color: #824a48;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 1em;
+  padding: 0.4em 2em;
+  border-radius: 25px;
+  transition: 0.2s opacity;
+  box-shadow: 2px 2px 6px 0 rgba(50, 50, 50, 0.5);
+}
 
-  .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-    color: #ffffff;
-  }
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: #fff;
+}
 
-  .button:active {
-    opacity: 0.8; 
-    text-decoration: none;
-  }
+.button:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
 
-  .button:visited {
-    color: #ffffff;
-  }
+.button:visited {
+  color: #fff;
+}
 
+.button.contact {
+  background-color: #424242;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 1em;
+  box-shadow: 2px 2px 6px 0 rgba(50, 50, 50, 0.5);
+}
 
-  .button.contact {
-    background-color: #424242;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin: 1em 1em;
-    box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.5) ;
-  }
+.button.contact:hover {
+  background-color: #824a48;
+  color: #fff;
+}
 
-  .button.contact:hover {
-    background-color: #824a48;
-    color: #ffffff;
-  }
-
-  #resumebutton {
-    margin-top: 2em;
-  }
+#resumebutton {
+  margin-top: 2em;
+}
 
 /* Layout styling */
 
@@ -159,7 +172,7 @@ a:focus {
 
 .row {
   padding: 3em 2em;
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
 }
 
 .row::after {
@@ -168,24 +181,25 @@ a:focus {
   display: table;
 }
 
-#work .row { padding-bottom: 25px; border-top: 1px solid #4a4a4a; }
+#work .row {
+  padding-bottom: 25px;
+  border-top: 1px solid #4a4a4a;
+}
 
 #hero {
   background-color: #f2f2f2;
   padding: 50px 25px;
-  width: 100%
+  width: 100%;
 }
 
-#hero h1{
+#hero h1 {
   margin: 0;
-  padding: 0 0 .67em 0;
+  padding: 0 0 0.67em;
 }
 
-#hero h2{
+#hero h2 {
   margin-top: 0;
 }
-
-
 
 .logo {
   max-width: 100px;
@@ -193,13 +207,13 @@ a:focus {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 45px;
-  }
+}
 
 header {
   background-color: #ebd6d5;
-  padding: 10px 0 12px 0;
+  padding: 10px 0 12px;
   position: fixed;
-  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.5);
   width: 100%;
 }
 
@@ -207,7 +221,8 @@ main {
   padding-top: 80px;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -219,7 +234,7 @@ main {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -230,14 +245,14 @@ main {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 nav > ul > li > a:visited {
@@ -266,13 +281,13 @@ nav > ul > li > a:active {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -284,7 +299,6 @@ nav > ul > li > a:active {
   padding: 0 2em;
   margin: 0;
 }
-
 
 #skills {
   text-align: left;
@@ -301,7 +315,7 @@ nav > ul > li > a:active {
 
 footer {
   background-color: #f2f2f2;
-  text-align: center;  
+  text-align: center;
   padding: 10px 0;
   width: 100%;
 }
@@ -330,14 +344,14 @@ footer {
 
 [class*="col-"] {
   float: left;
-  padding: .5em; 
+  padding: 0.5em;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 /* ==============================
@@ -359,30 +373,29 @@ Medium devices (640px and larger)
 
   .logo {
     min-width: 641px;
-    }
+  }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  
+
   nav > ul {
     margin: 1em 0;
   }
 
   nav > ul > li {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
-
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 /* ==============================
@@ -420,59 +433,17 @@ Large devices (1024px or larger)
 
   .logo {
     min-width: 641px;
-    }
+  }
 
-nav > ul > li {
-  display: inline-block;
-}
+  nav > ul > li {
+    display: inline-block;
+  }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
-
-}
-
-/* ============================== */
-
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
